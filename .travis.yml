@@ -5,6 +5,6 @@ sudo: true
 install:
   - git clone https://github.com/pytorch/examples.git
   - cd examples/word_language_model
-  - pip install -r requirements.txt
+  - pip install -r requirements.txt --progress-bar off
 
 script: python main.py --cuda --epochs 6 && python generate.py
