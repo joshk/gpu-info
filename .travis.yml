@@ -9,5 +9,7 @@ install:
   - cd examples/word_language_model
   - pip install -U pip
   - pip install -r requirements.txt --progress-bar off
+  - sudo dpkg -i cuda-repo-ubuntu1404_7.5-18_amd64.deb 
+  - sudo apt-get update
 
 script: python main.py --cuda --epochs 6 && python generate.py
