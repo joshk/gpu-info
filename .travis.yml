@@ -6,7 +6,6 @@ sudo: true
 
 install:
   - env
-  - chmod +x install_cuda.sh
   - source ./install_cuda.sh
   - env
   - git clone https://github.com/pytorch/examples.git
