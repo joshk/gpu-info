@@ -15,4 +15,4 @@ sudo apt-get update
 sudo apt-get install -y cuda
 
 # Check if installation is successful by running the next line
-# nvcc -V
+nvcc -V
