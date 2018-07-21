@@ -15,3 +15,4 @@ install:
 
 script: python main.py --cuda --tied && python generate.py
 # script: python main.py --tied && python generate.py
+
