@@ -9,10 +9,10 @@ export CUDA_ROOT=/usr/local/cuda
 export PATH=$PATH:$CUDA_ROOT/bin:$HOME/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_ROOT/lib64
 
-sudo apt-get update 
+CUDA_PACKAGES="cuda-drivers cuda-core-7.5-18 cuda-cudart-dev-7.5-18 cuda-cufft-dev-7.5-18"
 
-# y flag just says yes to all prompts
-sudo apt-get install -Vy cuda
+echo "Installing ${CUDA_PACKAGES}"
+sudo apt-get install -y ${CUDA_PACKAGES}
 
 # Check if installation is successful by running the next line
 nvcc -V
