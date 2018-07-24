@@ -11,7 +11,7 @@ export PATH=$PATH:$CUDA_ROOT/bin:$HOME/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_ROOT/lib64
 
 sudo apt-get update
-sudo apt-get install -y cuda
+sudo apt-get install -y --allow-unauthenticated cuda
 
 # Check if installation is successful by running the next line
 # nvcc -V
