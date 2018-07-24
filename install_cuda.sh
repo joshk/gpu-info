@@ -15,7 +15,6 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_ROOT/lib64
 sudo apt-get update -y --allow-unauthenticated
 sudo apt-get install -y --allow-unauthenticated cuda
 
-sudo modprobe nvidia
 nvidia-smi
 # Check if installation is successful by running the next line
 # nvcc -V
