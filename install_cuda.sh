@@ -12,7 +12,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_ROOT/lib64
 sudo apt-get update 
 
 # y flag just says yes to all prompts
-sudo apt-get install -y cuda
+sudo apt-get install -Vy cuda
 
 # Check if installation is successful by running the next line
 nvcc -V
