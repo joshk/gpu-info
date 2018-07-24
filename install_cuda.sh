@@ -1,4 +1,4 @@
-set +ex
+set -ex
 
 # http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/
 curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/cuda-repo-ubuntu1404_7.5-18_amd64.deb
