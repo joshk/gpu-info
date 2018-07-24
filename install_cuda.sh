@@ -1,5 +1,5 @@
 # http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/
-wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
+wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
 sudo dpkg -i --debug=210 cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
 
 rm cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
