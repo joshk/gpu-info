@@ -1,3 +1,5 @@
+set -ex
+
 # Add the package repositories
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
   sudo apt-key add -
