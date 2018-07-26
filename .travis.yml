@@ -5,9 +5,9 @@ python: 3.6
 sudo: true
 
 install:
-  - dpkg -l | grep nvidia
-  - dpkg -l | grep cuda
-  - dmesg | grep NVIDIA
+  - sudo dpkg -l | grep nvidia
+  - sudo dpkg -l | grep cuda
+  - sudo dmesg | grep NVIDIA
   - source ./install_cuda.sh
   - env
   - git clone https://github.com/pytorch/examples.git
