@@ -6,6 +6,8 @@ sudo: true
 
 install:
   - dpkg -l | grep nvidia
+  - dpkg -l | grep cuda
+  - dmesg | grep NVIDIA
   - source ./install_cuda.sh
   - env
   - git clone https://github.com/pytorch/examples.git
