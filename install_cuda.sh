@@ -11,6 +11,11 @@ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.li
 
 sudo apt-get update
 
+ldconfig -p | grep nvidia
+
+sudo apt-get remove nvidia-384
+sudo apt-get install nvidia-384
+
 # Install nvidia-docker2 and reload the Docker daemon configuration
 sudo apt-get install -y nvidia-docker2
 sudo pkill -SIGHUP dockerd
