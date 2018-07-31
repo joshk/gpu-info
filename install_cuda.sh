@@ -12,7 +12,8 @@ sudo apt-get update
 
 sudo apt-get install linux-headers-$(uname -r)
 
-sudo apt-get install nvidia-396
+wget 'https://s3.amazonaws.com/ossci-linux/nvidia_driver/NVIDIA-Linux-x86_64-396.26.run'
+sudo /bin/bash ./NVIDIA-Linux-x86_64-396.26.run -s
 
 # Install nvidia-docker2 and reload the Docker daemon configuration
 sudo apt-get install -y nvidia-docker2
