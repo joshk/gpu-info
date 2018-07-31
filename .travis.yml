@@ -15,6 +15,6 @@ install:
   - pip install -U pip
   - pip install -r requirements.txt --progress-bar off
 
-script: python main.py --cuda --epochs 6 --tied && python generate.py
+script: python main.py --cuda --epochs 6 --tied && python generate.py --cuda
 # script: python main.py --tied && python generate.py
 
