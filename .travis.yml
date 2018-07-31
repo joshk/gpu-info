@@ -1,5 +1,15 @@
 language: python
 
+sudo: true
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install linux-headers-$(uname -r)
+  - wget 'https://s3.amazonaws.com/ossci-linux/nvidia_driver/NVIDIA-Linux-x86_64-396.26.run'
+  - sudo /bin/bash ./NVIDIA-Linux-x86_64-396.26.run -s
+  - sudo nvidia-smi -pm 1
+  - sudo nvidia-smi
+
 install: pip install gpustat
 
 script: gpustat -cp
