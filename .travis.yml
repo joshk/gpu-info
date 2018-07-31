@@ -10,6 +10,7 @@ install:
   - wget 'https://s3.amazonaws.com/ossci-linux/nvidia_driver/NVIDIA-Linux-x86_64-396.26.run'
   - sudo /bin/bash ./NVIDIA-Linux-x86_64-396.26.run -s
   - sudo nvidia-smi -pm 1
+  - sudo nvidia-smi
   - git clone https://github.com/pytorch/examples.git
   - cd examples/word_language_model
   - pip install -U pip
