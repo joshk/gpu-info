@@ -6,7 +6,7 @@ sudo: true
 
 install:
   - env
-  - source ./install_cuda.sh
+  - bash ./install_cuda.sh
   - env
   - git clone https://github.com/pytorch/examples.git
   - cd examples/word_language_model
