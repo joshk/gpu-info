@@ -11,7 +11,8 @@ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.li
 
 sudo apt-get update
 
-sudo ldconfig -p | grep nvidia
+# this fails, going to comment out for now
+# sudo ldconfig -p | grep nvidia
 
 sudo apt-get remove nvidia-384
 sudo apt-get install nvidia-384
