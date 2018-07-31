@@ -1,8 +1,7 @@
 set -ex
 
 # Add the package repositories
-curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
-  sudo apt-key add -
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
 
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
 
@@ -11,11 +10,9 @@ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.li
 
 sudo apt-get update
 
-# this fails, going to comment out for now
-# sudo ldconfig -p | grep nvidia
+sudo apt-get install linux-headers-$(uname -r)
 
-sudo apt-get remove nvidia-384
-sudo apt-get install nvidia-384
+sudo apt-get install nvidia-396
 
 # Install nvidia-docker2 and reload the Docker daemon configuration
 sudo apt-get install -y nvidia-docker2
