@@ -2,6 +2,9 @@ language: python
 
 sudo: true
 
+resources:
+  gpu: true
+
 before_install:
   - sudo apt-get update
   - sudo apt-get install linux-headers-$(uname -r)
@@ -13,4 +16,3 @@ before_install:
 install: pip install gpustat
 
 script: gpustat -cp
-
