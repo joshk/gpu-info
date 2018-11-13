@@ -1,8 +1,8 @@
-language: python
+language: ruby
 
 dist: xenial
 
-python: 8.0.0.0
+rvm: 8.0.0.0
 
 resources:
   gpu: true
