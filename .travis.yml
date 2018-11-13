@@ -1,6 +1,8 @@
 language: python
 
-sudo: true
+dist: xenial
+
+python: 8.0.0.0
 
 resources:
   gpu: true
